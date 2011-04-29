@@ -103,7 +103,7 @@ class GeoHash {
     $table = "0123456789bcdefghjkmnpqrstuvwxyz";
     $lng = $this->longitude;
     $lat = $this->latitude;
-    if($this->precision === null) {
+    if(isset($this->precision)) {
       $p = $this->precision;
     } else {
       $lap = strlen($lat)-strpos($lat,".");
