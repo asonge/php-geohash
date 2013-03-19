@@ -79,7 +79,7 @@ class GeoHash {
    * Set a precision, clears any hash
    * @return GeoHash
    */
-  public function setPrecision($n) {
+  public function setPrecision($precision) {
     $this->hash = null;
     $this->precision = $precision;
     return $this;
